@@ -1,0 +1,42 @@
+.About{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 5%;
+}
+.About img{
+  box-sizing: border-box;
+  position: relative;
+  height: 60%;
+  width: 60%;
+}
+.About h4{
+  color:#2e9c3b;
+}
+.About .AboutMe{
+  font-size: 1rem;
+  padding:5px;
+  text-align: center;
+}
+
+@media screen {
+.About img{
+  padding-top: 5%;
+}
+}
+@media screen and (min-width:760px){
+   
+.About img{
+  width: auto;
+  position: absolute;
+  padding-right:95%;
+}
+.About .AboutMe{
+  padding-left: 50%;
+  padding-right:20px;
+  padding-top: 10%;
+}
+}

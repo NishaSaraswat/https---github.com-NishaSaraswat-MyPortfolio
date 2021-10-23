@@ -1,0 +1,103 @@
+ /* .Header{
+  box-sizing: border-box;
+  margin-bottom: -20px;
+  
+}  */
+
+.NavBar nav ul{
+   display: flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  flex-direction: column;
+  position: absolute;
+  right:0;
+  width:100%;
+  background-color:rgba(11, 223, 223, 0.36);
+  border-top: 2px solid #B5F4BC;
+}
+.NavBar{
+  height: 15%;
+  width:100%;
+  z-index:999;
+}
+a{
+  text-decoration: none;
+  color: white;
+  line-height:32px;
+  font-size: medium;
+  padding-left: 70%;
+  cursor:pointer;
+  
+}
+.NavBar .Navigation{
+  display: none;
+}
+.NavBar .Hamburger{
+  position: absolute;
+  right: 9%;
+ margin-top: -50px;
+  cursor:pointer;
+}
+a:hover{
+  color:yellowgreen;
+}
+.NavBar img{
+  position:relative;
+  margin: 10px;
+  padding:0;
+}
+@media screen and (min-width:760px){
+.NavBar .Hamburger{
+  display: none;
+}
+.NavBar .Navigation{
+  box-sizing: border-box;
+  position: inline;
+  display:flex;
+  display: absolute;
+  
+}
+a{
+  color: white;
+  font-weight: bold;
+ 
+}
+.NavBar nav ul{
+   margin-top: 0;
+   margin-bottom: 0;
+   display: flex;
+   flex-direction: row;
+    justify-content: right;
+    padding-right: 100px;
+    background-color:#181818;
+}
+ li{
+  margin-left:30px;
+  padding:10px;
+  padding-top:40px;
+  
+}
+img{
+    height: 30%;
+    width: 25%;
+    padding-left:50%;
+    position:absolute;
+    
+}
+}
+@media screen and (min-width:900px){
+
+.NavBar nav ul{
+   height: 15%;
+}
+}
+@media screen and (min-width:1000px){
+img{
+    height: 40%;
+    width: 50%;
+}
+.NavBar nav ul{
+   height: 12%;
+}
+}
